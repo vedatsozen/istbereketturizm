@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İSTANBUL BEREKET TURİZM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen min-h-screen max-w-screen">
+
+<nav class="fixed h-20 w-screen flex justify-center items-center gap-5">
+    <a href="#header" class="text-2xl text-emerald-900 tracking-wider">Anasayfa</a>
+    <a href="#araclar" class="text-2xl text-emerald-900 tracking-wider">Araçlarımız</a>
+    <a href="#rezervasyon" class="text-2xl text-emerald-900 tracking-wider">Rezervasyon</a>
+
+    <div class="flags flex flex-row justify-center items-center fixed right-1">
+        <img src="flags/turkish.png">
+        <img src="flags/english.png">
+    </div>
+
+</nav>
+
+<header id="header" class="h-screen max-w-screen flex justify-center items-center">
+    <div class="absolute top-20 left-4 flex flex-col justify-center items-center">
+    <h1 class="m-auto text-5xl bg-emerald-100 text-emerald-900 tracking-wider py-2">ISTANBUL BEREKET TURİZM</h1>
+    <p class="m-auto ml-0 text-xl bg-emerald-100 text-emerald-900 mt-1 tracking-wider py-2">Havada ve karada, sizi her yere ulaştırıyoruz.</p>
+    </div>
+</header>
+
+<section id="araclar" class="araclar bg-emerald-100 h-screen max-w-screen m-auto flex justify-center items-center gap-4">
+    <img class="h-2/3 w-3/12 shadow shadow-2xl rounded" src="imgs/araclar/arac1.jpg">
+    <img class="h-2/3 w-3/12 shadow shadow-2xl rounded" src="imgs/araclar/arac2.jpg">
+    <img class="h-2/3 w-3/12 shadow shadow-2xl rounded" src="imgs/araclar/arac3.jpg">
+
+</section>
+    
+
+<section id="rezervasyon" class="rezervasyon bg-emerald-100 h-screen max-w-screen m-auto flex flex-col justify-center items-center gap-4">
+    
+    <h1 class="text-6xl mt-2">REZERVASYON</h1>
+
+    <form class="mt-2 rounded w-full flex flex-col justify-center items-center gap-3">
+
+        <div class="w-full flex flex-col justify-center items-center gap-2">
+        <label>İsim</label>
+        <input type="email" class="form-input rounded px-4 py-3" />
+        </div>
+
+        <div class="w-full flex flex-col justify-center items-center gap-2">
+            <label>Soyisim</label>
+            <input type="text" class="form-input rounded px-4 py-3" />
+        </div>
+
+            <div class="w-full flex flex-col justify-center items-center gap-2">
+                <label>Telefon</label>
+                <input type="tel" class="form-input rounded px-4 py-3" />
+            </div>
+
+            <button type="submit" class="tracking-wider mt-4 text-xl text-emerald-100 bg-emerald-800 hover:bg-emerald-400 cursor-pointer p-2">Rezervasyon Yap</button>
+    </form>
+
+</section>
+
+</body>
+
+</html>
